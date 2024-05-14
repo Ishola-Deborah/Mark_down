@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="what-is-markdown">What is Markdown??</h1>
+<p>Markdown is a lightweight markup language that you can use to add
+formatting elements to plaintext text documents. Created by <strong>John
+Gruber in 2004</strong>, Markdown is now one of the world’s most popular
+markup languages.</p>
+<h2 id="headings">Headings</h2>
+<p>To create a heading, add one to six # symbols before your heading
+text. The number of # you use will determine the hierarchy level and
+typeface size of the heading.</p>
+<pre><code> # A first-level heading
+        
+## A second-level heading
+        
+### A third-level heading</code></pre>
+<h2 id="styling-texts">Styling Texts</h2>
+<p>Bold - <strong>THIS IS A BOLD TEXT,CHIDUBEM MUST NEVER
+FORGET</strong></p>
+<p>Italic - <em>This is Italic</em></p>
+<p>Strikethrough - This is a strikethrough text</p>
+<p>Subscript - <sub> This is a subcript Text </sub></p>
+<p>Superscript - <sup> This is superscript Text </sup></p>
+<h2 id="quoting-text">Quoting Text</h2>
+<p>You can quote a text with “&gt;” &gt; This is a Quoted Text &gt;&gt;
+Another quoted one &gt;&gt;&gt; CHIDUMEN</p>
+<h2 id="quoting-code">Quoting Code</h2>
+<p>You can call out code or a command within a sentence with single
+backticks. The text within the backticks will not be formatted. You can
+also press the Command+E (Mac) or Ctrl+E (Windows/Linux) keyboard
+shortcut to insert the backticks for a code block within a line of
+Markdown. The followng are quoted code:</p>
+<pre><code>git status
+git add
+git commit</code></pre>
+<h2 id="suppported-color-models">Suppported Color Models</h2>
+<p>You can call out colors within a sentence by using backticks. A
+supported color model within backticks will display a visualization of
+the color.</p>
+<p>The background color is <code>#ffffff</code> for light mode and
+<code>#000000</code> for dark mode.</p>
+<h2 id="links">Links</h2>
+<p>You can create an inline link by wrapping link text in brackets [ ],
+and then wrapping the URL in parentheses ( ). You can also use the
+keyboard shortcut Command+K to create a link. When you have text
+selected, you can paste a URL from your clipboard to automatically
+create a link from the selection.</p>
+<p><a href="https://www.w3schools.com/html/">MDN</a></p>
+<h2 id="relative-link">Relative Link</h2>
+<p>A relative link is a link that is relative to the current file. For
+example, if you have a README file in root of your repository, and you
+have another file in docs/CONTRIBUTING.md, the relative link to
+CONTRIBUTING.md in your README might look like this:</p>
+<p><a href="README.md">Readme</a> <a href="headings.md">The heading
+section</a></p>
+<h2 id="image">Image</h2>
+<p>You can display an image by adding ! and wrapping the alt text in [
+]. Alt text is a short text equivalent of the information in the image.
+Then, wrap the link for the image in parentheses () <img
+src="ict-folks.jpg" alt="Ict folks" width="50%" /></p>
+<h2 id="horizontal-line">Horizontal Line</h2>
+<p>Baby girl ***</p>
+<h2 id="tables">Tables</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Col 1</th>
+<th>Col2</th>
+<th>Col3</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>This</td>
+<td>is</td>
+<td>you</td>
+</tr>
+<tr class="even">
+<td>an</td>
+<td>example</td>
+<td>can</td>
+</tr>
+<tr class="odd">
+<td>of</td>
+<td>a table</td>
+<td>add</td>
+</tr>
+<tr class="even">
+<td>with</td>
+<td>2 col</td>
+<td>any text</td>
+</tr>
+</tbody>
+</table>
+<h2 id="lists">Lists</h2>
+<p>You can make an unordered list by preceding one or more lines of text
+with -, *, or +. - Adam - Shadow</p>
+<ul>
+<li><p>Lighten</p></li>
+<li><p>Darken</p></li>
+<li><p>Lindlyn</p></li>
+<li><p>Touche</p></li>
+</ul>
+<p>To order your list, you can start with number 1. Octopus 2. Penthouse
+3. Lighthouse</p>
+<h2 id="nested-list">Nested List</h2>
+<p>You can create a nested list by indenting one or more list items
+below another item. 1. First nested list - Second nested list - Third
+nested list - Fourth nested list</p>
+<h2 id="check-list">Check List</h2>
+<p>To create a task list, preface list items with a hyphen and space
+followed by [ ]. To mark a task as complete, use [x].</p>
+<ul class="task-list">
+<li><label><input type="checkbox" checked="" />Go to the
+Zoo</label></li>
+<li><label><input type="checkbox" checked="" />Teach setup of Github
+Profile</label></li>
+<li><label><input type="checkbox" />Explain Github Desktop</label></li>
+<li><label><input type="checkbox" />Review video features spec
+supports</label></li>
+</ul>
+<p>If a list start with a parenthesis(); - [ ] (Optional) Open a
+followup issue</p>
+<h2 id="using-emoji">Using Emoji</h2>
+<p>You can add emoji to your writing by typing :EMOJICODE:, a colon
+followed by the name of the emoji.</p>
+<p><span class="citation" data-cites="Lion">@Lion</span> :+1: This PR
+looks great - It is ready to merge! :angry: :joy: :smile: :blush:
+:heart:</p>
+<h2 id="alerts">Alerts</h2>
+<p>To add an alert, use a special blockquote line specifying the alert
+type, followed by the alert information in a standard blockquote. Five
+types of alerts are available:</p>
+<blockquote>
+<p>[!NOTE] Useful information that users should know, even when skimming
+content.</p>
+</blockquote>
+<blockquote>
+<p>[!TIP] Helpful advice for doing things better or more easily.</p>
+</blockquote>
+<blockquote>
+<p>[!IMPORTANT] Key information users need to know to achieve their
+goal.</p>
+</blockquote>
+<blockquote>
+<p>[!WARNING] Urgent info that needs immediate user attention to avoid
+problems.</p>
+</blockquote>
+<blockquote>
+<p>[!CAUTION] Advises about risks or negative outcomes of certain
+actions.</p>
+</blockquote>
+
+</body>
+</html>
